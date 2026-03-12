@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zackdcat.site</title>
+
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+	<link rel="icon" href="/images/icon-modified.png">
+	<meta name="description" content="zackdcat's portfolio">
+</head>
+<body>
+    <header class="title">
+        404.site
+    </header>
+	
+	<img id="toggle" onclick="darklightmodetoggle()" class="darklight_mode-toggle" src="/images/toggle_off.svg" alt="">
+
+	<p class="Error_Text" >
+		Nothing here :(<br>
+		<span onclick="copyToClipboard('<%= error.status %> - <%= error.message %>')">Click me to copy error.</span><br><br>
+		<a href="/">Click me to go home.</a>
+	</p>
+
+	<!-- SCRIPTS -->
+	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+	<script>
+		kofiWidgetOverlay.draw('zackdcat', {
+			'type': 'floating-chat',
+			'floating-chat.donateButton.text': 'Ko-fi',
+			'floating-chat.donateButton.background-color': '#5cb85c',
+			'floating-chat.donateButton.text-color': '#fff'
+		});
+	</script>
+	<script src="/javascripts/index.js"></script>
+</body>
+</html>
